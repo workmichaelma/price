@@ -4,22 +4,29 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
+    "dev": "nodemon --exec node_modules/.bin/babel-node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "type": "module",
   "author": "",
   "license": "ISC",
   "dependencies": {
     "async": "^3.2.3",
     "axios": "^0.26.1",
+    "cron": "^1.8.2",
+    "firebase": "^9.6.11",
+    "firebase-admin": "^10.0.2",
     "iconv-lite": "^0.6.3",
     "koa": "^2.13.4",
     "koa-router": "^10.1.1",
     "lodash": "^4.17.21",
+    "moment": "^2.29.2",
     "nodemon": "^2.0.15"
   },
   "devDependencies": {
-    "@babel/plugin-transform-async-to-generator": "^7.16.8"
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/node": "^7.16.8",
+    "@babel/plugin-transform-async-to-generator": "^7.16.8",
+    "@babel/preset-env": "^7.16.11"
   }
 }
