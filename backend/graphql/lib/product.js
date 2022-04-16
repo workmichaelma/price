@@ -1,6 +1,6 @@
 import { initFirebase } from '../../firebase'
-const isDev = process.env.isDev
 
+const isDev = process.env.isDev !== "false"
 const DB_NAME = `products${isDev ? "__test" : ""}`
 let db = null
 

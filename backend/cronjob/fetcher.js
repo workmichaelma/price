@@ -5,7 +5,7 @@ import { writeBatch, doc } from "firebase/firestore";
 import { initFirebase } from '../firebase'
 import moment from 'moment';
 
-const isDev = process.env.isDev
+const isDev = process.env.isDev !== "false"
 const DB_NAME = `products${isDev ? "__test" : ""}`
 let db = null
 
