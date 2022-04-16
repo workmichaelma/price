@@ -1,0 +1,12 @@
+type Shop {
+  name: String
+  records: [ShopRecord]
+}
+
+type ShopRecord {
+  avgPrice: Float
+  avgRemark: String
+  date: String
+  price: Float
+  remark: String
+}

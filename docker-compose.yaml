@@ -7,4 +7,6 @@ services:
       - ./backend:/app/price/backend
     ports:
       - 3000:3000
+    environment:
+      - "isDev=${isDev}"
     command: sh -c "npm run dev"

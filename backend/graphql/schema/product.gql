@@ -1,0 +1,18 @@
+schema {
+  query: Query
+}
+
+type Product {
+  code: ID
+  brand: String
+  isSale: Boolean
+  max: Float
+  min: Float
+  name: String
+  shops: [Shop]
+}
+
+type Query {
+  product (code: ID): Product
+  products (brand: String): [Product]
+}
